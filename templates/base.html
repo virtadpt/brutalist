@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="{{ DEFAULT_LANG }}">
+<head>
+        {% block head %}
+        <title>{% block title %}{{ SITENAME }}{% endblock title %}</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta charset="utf-8" />
+
+        <!-- Feeds -->
+        <link href="{{ FEED_DOMAIN }}/{% if FEED_ALL_ATOM_URL %}{{ FEED_ALL_ATOM_URL }}{% else %}{{ FEED_ALL_ATOM }}{% endif %}" type="application/atom+xml" rel="alternate" title="{{ SITENAME }} Full Atom Feed" />
+
+        <link href="{{ FEED_DOMAIN }}/{% if FEED_ALL_RSS_URL %}{{ FEED_ALL_RSS_URL }}{% else %}{{ FEED_ALL_RSS }}{% endif %}" type="application/rss+xml" rel="alternate" title="{{ SITENAME }} Full RSS Feed" />
+
+        <!-- twitter card metadata -->
+        {% block twittercard %}
+        {% endblock twittercard %}
+
+        <!-- OG Tags -->
+        {% block ogtags %}
+        {% endblock ogtags %}
+
+        <!-- favicon -->
+        {% if FAVICON %}
+        <link rel="icon" type="image/png" href="{{ SITEURL }}/favicons/{{ FAVICON }}">
+        {% endif %}
+
+        <!-- moment.js for date formatting -->
+        <script src="{{ SITEURL }}/theme/js/moment.js"></script>
+
+        <!-- css -->
+        <link rel="stylesheet" type="text/css" href="{{ SITEURL }}/theme/css/main.css" />
+
+        {% endblock head %}
+</head>
+
+<body>
+    {% block header %}
+    <div role="banner" id="masthead">
+        <header>
+            <center>
+            {% if GRAVATAR %}
+            <a href="/"><img src="{{ GRAVATAR }}" alt="The Doctor's current avatar." class="gravatar"></a>
+            {% elif LOGO %}
+            <a href="/"><img src="{{ SITEURL }}/images/{{ LOGO }}" alt="Virtual Adepts insignia"></a>
+            {% endif %}
+            </center>
+
+            <br />
+
+            <h1><a href="/" id="sitename">{{ SITENAME }}</a></h1>
+
+            <nav id="menu">
+                <ul>
+                <li><a href="/page/about-me">About me.</a></li>
+                <li><a href="/drwho.plan">.plan file</a></li>
+                <li><a href="https://ko-fi.com/virtadpt">Coffee?</a></li>
+                <li><a href="/page/social">Social</a></li>
+                <li><a href="/page/people">People</a></li>
+                <li><a href="/page/stuff-i-like">Links</a></li>
+                <li><a href="/page/site">Miscellanea</a></li>
+                <li><a href="/page/about-this-site">About this site</a></li>
+                <li><a href="/page/syndication">Syndication</a></li>
+                <li><a href="/tags.html">Tags</a></li>
+                <li><a href="https://amoebatron.virtadpt.net/">Online dice roller</a></li>
+                </ul>
+
+                <hr>
+
+                <ul>
+                <li><a href="/page/turtles-all-the-way-down">Turtles All the Way Down</a></li>
+                <li><a href="/page/everything-i-need-to-know-in-life-i-learned-from-reading-william-gibson-novels">Everything I Need to Know In Life, I Learned from Reading William Gibson Novels</a></li>
+                <li><a href="/page/laws">The Laws of the Twenty-First Century</a></li>
+                <li><a href="/page/exocortex">Exocortex Resources</a></li>
+                <li><a href="/page/a-friendly-introduction-to-the-fediverse">A Friendly Introduction to the Fediverse</a></li>
+                <li><a href="/page/getting-narcan">Getting Narcan</a></li>
+                </ul>
+
+                <hr>
+
+                <ul>
+                <!-- I hate my lives. -->
+                <li><a href="">Necrology</a></li>
+                <li><a href="/page/edward-c-grejda-rip">Edward C. Grejda</a></li>
+                <li><a href="/page/helen-wendel-rip">Helen Wendel</a></li>
+                <li><a href="http://crusher.parad.net/">Crusher [412/724]</a></li>
+                <li><a href="/page/kevin-gallagher-rip">Kevin Gallagher</a></li>
+                <li><a href="/page/nancy-a-grejda-rip">Nancy A. Grejda</a></li>
+                </ul>
+
+                <hr>
+
+                <!-- Search -->
+                <section class="box search">
+                <form method="get" accept-charset="UTF-8" target="_blank"
+                    action="https://heterochromia.virtadpt.net/yacysearch.html">
+                <div style="padding: 0.0em; -webkit-border-radius: 0.2em;
+                    -moz-border-radius: 0.2em; border-radius: 0.2em;
+                    margin: 0;">
+                <label for="query" style="padding: 0.8em; font-size: 1.2em;
+                    font-weight: 400; display: block;">Search my site?</label>
+                <input type="text" name="query" value="" maxlength="100"
+                    style="width:200px; " />
+                <input type="hidden" name="verify" value="cacheonly" />
+                <input type="hidden" name="maximumRecords" value="20" />
+                <input type="hidden" name="meanCount" value="5" />
+                <input type="hidden" name="resource" value="local" />
+                <input type="hidden" name="urlmaskfilter" value=".*" />
+                <input type="hidden" name="prefermaskfilter" value="" />
+                <input type="hidden" name="display" value="2" />
+                <input type="hidden" name="nav" value="all" />
+                </div>
+                </form>
+                </section>
+                <!-- End of Search -->
+
+                <hr>
+
+                <ul id="webring">
+                <li><a href="https://l00p.hackers.town/link.php?id=5&go=p">&larr;</a> <a href="https://l00p.hackers.town">l00p</a> <a href="https://l00p.hackers.town/link.php?id=5&go=n">&rarr;</a></li>
+                </ul>
+
+                <hr>
+
+            </nav>
+        </header>
+    </div>
+    {% endblock header %}
+
+    <div class="page" role="main">
+        {% block content %}
+        {% endblock content %}
+
+        {% block footer %}
+        <footer>
+        <p>© <script>document.write(moment().format('YYYY'));</script> {{ AUTHOR }}</p>
+
+        {% if ATTRIBUTION %} 
+        <p>Pelican Theme: <a href="https://github.com/mc-buckets/brutalist">Brutalist</a></p>
+        <p>Designed and built by <a href="http://twitter.com/mcman_s">@mcman_s</a> in Denver</p>
+        {% endif %}
+
+        </footer>
+        {% endblock footer %}
+    </div>
+</body>
+</html>

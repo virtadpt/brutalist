@@ -1,22 +1,23 @@
 <div class="articles">
         <ol>
+            <!-- Each iteration will display a single article's block -->
             {% for article in articles_page.object_list %}
             <li>
                 <article>
 
                     <header>
-                        <a href="{{ SITEURL }}/{{ article.url }}">
+                    <a href="{{ SITEURL }}/{{ article.url }}">
                         <h2>{{ article.title }}</h2>
-                        </a>
+                    </a>
                     </header>
 
                     {% if article.date %}
                     <footer>
-                         <p>
-                            <time datetime="{{ article.date }}">
-                            <script>document.write(moment('{{ article.date }}').format('LL'));</script>
-                            </time>
-                        </p>
+                    <p>
+                    <time datetime="{{ article.date }}">
+                    <script>document.write(moment('{{ article.date }}').format('LL'));</script>
+                    </time>
+                    </p>
                     </footer>
                     {% endif %}
 
@@ -37,6 +38,7 @@
             </li>
             {% endfor %}
         </ol>
+
         {% if articles_page.has_other_pages() %}
             {% include 'pagination.html' %}
         {% endif %}

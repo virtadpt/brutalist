@@ -10,6 +10,7 @@
   {% endfor %}
 {% endblock %}
 
+<!-- Twitter tags -->
 {% block twittercard %}
 {% if article.cover_image %}
 <meta name="twitter:card" content="summary_large_image">
@@ -50,15 +51,15 @@
 
         <header>
           <h2>
-            {{ article.title }}
+          {{ article.title }}
           </h2>
         </header>
 
       {% if article.date %}
         <footer>
-              <time datetime=" {{ article.date }}">
-              <script>document.write(moment('{{ article.date }}').format('LL'));</script>
-              </time>
+        <time datetime=" {{ article.date }}">
+        <script>document.write(moment('{{ article.date }}').format('LL'));</script>
+        </time>
         </footer>
       {% endif %}
 

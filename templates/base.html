@@ -5,24 +5,62 @@
         <title>{% block title %}{{ SITENAME }}{% endblock title %}</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta charset="utf-8" />
+        <link rel="author" href="/humans.txt" />
+        <link rel="meta" type="application/rdf+xml" title="FOAF" href="/foaf.rdf" />
+
+        <!-- Self-Auth -->
+        <link rel="authorization_endpoint"
+            href="https://drwho.virtadpt.net/selfauth/" />
 
         <!-- Feeds -->
         <link href="{{ FEED_DOMAIN }}/{% if FEED_ALL_ATOM_URL %}{{ FEED_ALL_ATOM_URL }}{% else %}{{ FEED_ALL_ATOM }}{% endif %}" type="application/atom+xml" rel="alternate" title="{{ SITENAME }} Full Atom Feed" />
 
         <link href="{{ FEED_DOMAIN }}/{% if FEED_ALL_RSS_URL %}{{ FEED_ALL_RSS_URL }}{% else %}{{ FEED_ALL_RSS }}{% endif %}" type="application/rss+xml" rel="alternate" title="{{ SITENAME }} Full RSS Feed" />
 
-        <!-- twitter card metadata -->
+        <!-- Primary metatags -->
+        <meta name="title" content="Antarctica Starts Here.">
+        <meta name="description" content="The personal homepage of The Doctor.">
+
+        <!-- Twitter -->
         {% block twittercard %}
         {% endblock twittercard %}
 
-        <!-- OG Tags -->
+        <!-- Opengraph / Facebook -->
         {% block ogtags %}
         {% endblock ogtags %}
 
-        <!-- favicon -->
-        {% if FAVICON %}
-        <link rel="icon" type="image/png" href="{{ SITEURL }}/favicons/{{ FAVICON }}">
-        {% endif %}
+        <!-- favicon.ico stuff. -->
+        <link rel="manifest" href="/favicons/manifest.json">
+        <link rel="apple-touch-icon" sizes="57x57"
+            href="/favicons/apple-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60"
+            href="/favicons/apple-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72"
+            href="/favicons/apple-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76"
+            href="/favicons/apple-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114"
+            href="/favicons/apple-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120"
+            href="/favicons/apple-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144"
+            href="/favicons/apple-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152"
+            href="/favicons/apple-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180"
+            href="/apple-icon-180x180.png">
+        <link rel="icon" type="image/png" sizes="192x192"
+            href="/favicons/android-icon-192x192.png">
+        <link rel="icon" type="image/png" sizes="32x32"
+            href="/favicons/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="96x96"
+            href="/favicons/favicon-96x96.png">
+        <link rel="icon" type="image/png" sizes="16x16"
+            href="/favicons/favicon-16x16.png">
+        <meta name="msapplication-TileColor"
+            content="#ffffff">
+        <meta name="msapplication-TileImage"
+            content="/favicons/ms-icon-144x144.png">
 
         <!-- moment.js for date formatting -->
         <script src="{{ SITEURL }}/theme/js/moment.js"></script>

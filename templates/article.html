@@ -63,6 +63,12 @@
         </footer>
       {% endif %}
 
+      <div class="tags">
+          {% for tag in article.tags %}
+          <a href="{{ SITEURL }}/{{ tag.url }}" class="tag">{{ tag.name }}</a>
+          {% endfor %}
+      </div>
+
       <div class="content">
          {{ article.content|safe }}
       </div>

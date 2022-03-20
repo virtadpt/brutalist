@@ -418,8 +418,8 @@ footer {
 }
 @media (min-width: 55em) {
   .articles {
-    padding: 2em;
-    padding-top: 2em;
+    /* padding: 2em; */
+    /* padding-top: 2em; */
   }
 }
 .articles article {

@@ -638,13 +638,13 @@ footer {
 /* END PAGINATION */
 /* TAGS/CATEGORIES */
 .page-title {
-  border-bottom: 2px solid black;
+  /* border-bottom: 2px solid black; */
   margin: 0 2em;
 }
 .page-title h1 {
   font-size: 3em;
-  padding-bottom: 0.75em;
-  padding-top: 1.5em;
+  /* padding-bottom: 0.75em; */
+  padding-top: 1.0em;
   text-align: left;
 }
 

@@ -12,7 +12,7 @@
 <div class="articles">
     <ul>
     {% for tag, articles in tags %}
-        <li><a href="{{ SITEURL }}/{{ tag.url }}">{{ tag }}</a> <span class="count">({{ articles|count }})</span></li>
+        <li><a href="{{ SITEURL }}/{{ tag.url }}">{{ tag | replace('_', ' ') }}</a> <span class="count">({{ articles | count }})</span></li>
     {% endfor %}
     </ul>
 </div>

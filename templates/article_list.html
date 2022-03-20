@@ -23,8 +23,8 @@
 
                     <div class="tags">
                         <ul class="tags">
-                        {% for tag in article.tags %}
-                            <li><a href="{{ SITEURL }}/{{ tag.url }}" class="tag">{{ tag.name }}</a></li>
+                        {% for tag in article.tags | sort %}
+                            <li><a href="{{ SITEURL }}/{{ tag.url }}" class="tag">{{ tag.name | replace('_', ' ') }}</a></li>
                         {% endfor %}
                         </ul>
                     </div>

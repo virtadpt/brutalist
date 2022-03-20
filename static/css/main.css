@@ -281,7 +281,7 @@ body {
 }
 @media (min-width: 65em) {
   .page {
-    padding-left: 20%;
+    padding-left: 10%;
   }
 }
 @media (min-width: 75em) {
@@ -444,7 +444,8 @@ footer {
 }
 .articles article .summary {
   /* padding-bottom: 1em; */
-  font-size: 1.125em;
+  /* font-size: 1.125em; */
+  font-size: 1.25em;
   font-weight: 100;
 }
 .articles article .summary p {

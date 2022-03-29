@@ -402,6 +402,10 @@ footer {
   margin-bottom: 2em;
   margin-top: 2em;
 }
+footer p {
+  font-size: 1.2em;
+  font-weight: bold;
+}
 
 /* END FOOTER STYLES */
 /* ARTICLES */

@@ -55,13 +55,11 @@
           </h2>
         </header>
 
-      {% if article.date %}
+        {% if article.date %}
         <footer>
-        <time datetime=" {{ article.date }}">
-        <script>document.write(moment('{{ article.date }}').format('D MMMM YYYY'));</script>
-        </time>
+        <p>{{ article.date | strftime("%d %B %Y") }}</p>
         </footer>
-      {% endif %}
+        {% endif %}
 
       <div class="tags">
           {% for tag in article.tags | sort %}

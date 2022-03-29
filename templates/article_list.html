@@ -13,11 +13,7 @@
 
                     {% if article.date %}
                     <footer>
-                    <p>
-                    <time datetime="{{ article.date }}">
-                    <script>document.write(moment('{{ article.date }}').format('D MMMM YYYY'));</script>
-                    </time>
-                    </p>
+                    <p>{{ article.date | strftime("%d %B %Y") }}</p>
                     </footer>
                     {% endif %}
 

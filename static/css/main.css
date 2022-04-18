@@ -481,7 +481,7 @@ footer p {
   width: 85%;
   /* results in ~60-70 characters per line */
   text-align: left;
-  line-height: 1.75;
+  /* line-height: 1.75; */
   padding-top: 2em;
   /* Article published date*/
   /* Article Header */
@@ -490,6 +490,7 @@ footer p {
 .article article footer {
   margin-bottom: 0;
   margin-top: 0;
+  padding-bottom: 0.25em;
 }
 /* .article article footer p {
   text-align: center;

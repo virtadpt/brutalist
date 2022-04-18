@@ -486,6 +486,7 @@ footer p {
   /* Article published date*/
   /* Article Header */
   /* Article content styles */
+  padding: 1.5em;
 }
 .article article footer {
   margin-bottom: 0;

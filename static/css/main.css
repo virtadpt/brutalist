@@ -537,7 +537,7 @@ footer p {
   width: 85%;
   margin: 0 auto;
   line-height: 2;
-  padding-bottom: 2em;
+  /* padding-bottom: 2em; */
 }
 .article article .content ul {
   list-style-type: square;

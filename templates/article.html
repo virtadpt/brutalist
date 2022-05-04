@@ -13,35 +13,35 @@
 <!-- Twitter tags -->
 {% block twittercard %}
 {% if article.cover_image %}
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="{{ SITEURL }}/images/{{ article.cover_image }}">
-<meta name="twitter:creator" content="{{ TWITTER_USERNAME }}">
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:image" content="{{ SITEURL }}/images/{{ article.cover_image }}">
+        <meta name="twitter:creator" content="{{ TWITTER_USERNAME }}">
 {% elif GRAVATAR %}
-<meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="{{ GRAVATAR }}">
+        <meta name="twitter:card" content="summary">
+        <meta name="twitter:image" content="{{ GRAVATAR }}">
 {% elif LOGO %}
-<meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="{{ SITEURL }}/images/{{ LOGO }}">
+        <meta name="twitter:card" content="summary">
+        <meta name="twitter:image" content="{{ SITEURL }}/images/{{ LOGO }}">
 {% endif %}
-<meta name="twitter:site" content="{{ TWITTER_USERNAME }}">
-<meta name="twitter:title" content="{{ article.title }}">
-<meta name="twitter:description" content="{{ article.description }}">
+        <meta name="twitter:site" content="{{ TWITTER_USERNAME }}">
+        <meta name="twitter:title" content="{{ article.title }}">
+        <meta name="twitter:description" content="{{ article.description }}">
 {% endblock twittercard %}
 
 <!-- OG Tags -->
 {% block ogtags %}
-<meta property="og:url" content="{{ SITEURL }}/{{ article.url }}"/>
-<meta property="og:title" content="{{ SITENAME }} | {{ article.title }}" />
-<meta property="og:description" content="{{ article.description }}" />
+        <meta property="og:url" content="{{ SITEURL }}/{{ article.url }}"/>
+        <meta property="og:title" content="{{ SITENAME }} | {{ article.title }}" />
+        <meta property="og:description" content="{{ article.description }}" />
 {% if article.cover_image %}
-<meta property="og:image" content="{{ SITEURL }}/images/{{ article.cover_image }}" />
+        <meta property="og:image" content="{{ SITEURL }}/images/{{ article.cover_image }}" />
 {% elif SITEIMAGE %}
-<meta property="og:image" content="{{ SITEURL }}/images/{{ SITEIMAGE }}" />
+        <meta property="og:image" content="{{ SITEURL }}/images/{{ SITEIMAGE }}" />
 {% elif LOGO %}
-<meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="{{ SITEURL }}/images/{{ LOGO }}">
+        <meta name="twitter:card" content="summary">
+        <meta name="twitter:image" content="{{ SITEURL }}/images/{{ LOGO }}">
 {% elif GRAVATAR %}
-<meta name="twitter:image" content="{{ GRAVATAR }}">
+        <meta name="twitter:image" content="{{ GRAVATAR }}">
 {% endif %}
 {% endblock ogtags %}
 

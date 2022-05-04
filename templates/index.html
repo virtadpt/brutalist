@@ -3,30 +3,30 @@
 <!-- twitter card metadata -->
 {% block twittercard %}
 {% if SITEIMAGE %}
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="{{ SITEURL }}/images/{{ SITEIMAGE }}">
-<meta name="twitter:creator" content="{{ TWITTER_USERNAME }}">
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:image" content="{{ SITEURL }}/images/{{ SITEIMAGE }}">
+        <meta name="twitter:creator" content="{{ TWITTER_USERNAME }}">
 {% elif GRAVATAR %}
-<meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="{{ GRAVATAR }}">
+        <meta name="twitter:card" content="summary">
+        <meta name="twitter:image" content="{{ GRAVATAR }}">
 {% elif LOGO %}
-<meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="{{ SITEURL }}/images/{{ LOGO }}">
+        <meta name="twitter:card" content="summary">
+        <meta name="twitter:image" content="{{ SITEURL }}/images/{{ LOGO }}">
 {% endif %}
-<meta name="twitter:site" content="{{ TWITTER_USERNAME }}">
-<meta name="twitter:title" content="{{ SITENAME }}">
-<meta name="twitter:description" content="{{ SITEDESCRIPTION }}">
+        <meta name="twitter:site" content="{{ TWITTER_USERNAME }}">
+        <meta name="twitter:title" content="{{ SITENAME }}">
+        <meta name="twitter:description" content="{{ SITEDESCRIPTION }}">
 {% endblock twittercard %}
 
 <!-- Opengraph tags -->
 {% block ogtags %}
-<meta property="og:url" content="{{ SITEURL }}"/>
-<meta property="og:title" content="{{ SITENAME }}" />
-<meta property="og:description" content="{{ SITEDESCRIPTION }}" />
+        <meta property="og:url" content="{{ SITEURL }}"/>
+        <meta property="og:title" content="{{ SITENAME }}" />
+        <meta property="og:description" content="{{ SITEDESCRIPTION }}" />
 {% if SITEIMAGE %}
-<meta property="og:image" content="{{ SITEURL }}/images/{{ SITEIMAGE }}" />
+        <meta property="og:image" content="{{ SITEURL }}/images/{{ SITEIMAGE }}" />
 {% elif LOGO %}
-<meta property="og:image" content="{{ SITEURL }}/images/{{ LOGO }}" />
+        <meta property="og:image" content="{{ SITEURL }}/images/{{ LOGO }}" />
 {% endif %}
 {% endblock ogtags %}
 

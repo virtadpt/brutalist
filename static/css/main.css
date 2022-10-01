@@ -447,7 +447,7 @@ footer p {
   /* padding-bottom: 1em; */
   /* font-size: 1.125em; */
   font-size: 1.25em;
-  font-weight: 100;
+  /* font-weight: 100; */
 }
 .articles article .summary p {
   padding-bottom: 1em;
@@ -504,9 +504,10 @@ footer p {
   /* text-align: center; */
 }
 .article article .content {
-  font-size: 1.125em;
+  /* font-size: 1.125em; */
+  font-size: 1.25em;
   /* 18/16 = 1.125 */
-  font-weight: 300;
+  /* font-weight: 300; */
   /* article headers */
   /* article lists */
   /* italics */

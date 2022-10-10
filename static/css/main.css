@@ -268,10 +268,14 @@ body {
 /* END FONTS */
 /* MAIN CONTENT CONTAINER */
 .page {
-  max-width: 42.5em;
   /* 680/16 = 42.5 */
+  /* max-width: 42.5em; */
+  /* Grow the center column to more or less match the one on the frontpage. */
+  max-width: 55em;
   margin: auto;
-  text-align: center;
+  /* text-align: center; */
+  /* Matches the positioning on the frontpage. */
+  text-align: left;
   line-height: 1.5;
 }
 @media (min-width: 55em) {
@@ -481,7 +485,9 @@ footer p {
 }
 .article article {
   display: inline-block;
-  width: 85%;
+  /* width: 85%; */
+  /* Expand the text to fit the entire column. */
+  width: 100%;
   /* results in ~60-70 characters per line */
   text-align: left;
   /* line-height: 1.75; */

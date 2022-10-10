@@ -503,7 +503,7 @@ footer p {
   font-size: 2em;
   /* 32/16 = 2*/
   /* padding-bottom: 1em; */
-  font-weight: 900;
+  /* font-weight: 900; */
   /* text-align: center; */
 }
 .article article .content {

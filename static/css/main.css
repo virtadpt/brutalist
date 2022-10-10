@@ -419,8 +419,11 @@ footer p {
 }
 @media (min-width: 55em) {
   .articles {
-    /* padding: 2em; */
-    /* padding-top: 2em; */
+    padding: 2em;
+    padding-top: 2em;
+
+    /* This expands the width of the article column on the frontpage. */
+    min-width: 55em;
   }
 }
 .articles article {

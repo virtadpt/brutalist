@@ -273,9 +273,9 @@ body {
   /* Grow the center column to more or less match the one on the frontpage. */
   max-width: 55em;
   margin: auto;
-  /* text-align: center; */
+  text-align: center;
   /* Matches the positioning on the frontpage. */
-  text-align: left;
+  /* text-align: left; */
   line-height: 1.5;
 }
 @media (min-width: 55em) {
@@ -290,7 +290,7 @@ body {
 }
 @media (min-width: 75em) {
   .page {
-    padding-left: 0;
+    /* padding-left: 0; */
   }
 }
 

@@ -11,7 +11,7 @@
 
 <div class="articles">
     <ul>
-    {% for tag, articles in tags %}
+    {% for tag, articles in tags|sort_by_article_count %}
         <li><a href="{{ SITEURL }}/{{ tag.url }}">{{ tag | replace('_', ' ') }}</a> <span class="count">({{ articles | count }})</span></li>
     {% endfor %}
     </ul>

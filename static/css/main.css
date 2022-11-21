@@ -338,13 +338,13 @@ div#masthead img {
     max-width: 10%;
   }
 }
-@media (min-width: 55em) {
+/* @media (min-width: 55em) {
   div#masthead img {
     display: block;
     max-width: 60%;
     padding: 0;
   }
-}
+} */
 @media (min-width: 65em) {
   div#masthead img {
     max-width: 50%;

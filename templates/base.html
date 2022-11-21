@@ -125,14 +125,6 @@
 
                 <hr>
 
-<!-- I'll work on this later.
-                <center>
-                <img src="{{ SITEURL }}/theme/css/svg/rss.svg" style="width: 28px; height: 28px;" alt="RSS feed icon"> <img src="{{ SITEURL }}/theme/css/svg/atom.svg" style="width: 28px; height: 28px;" alt="ATOM feed icon">
-                </center>
-
-                <hr>
--->
-
                 <ul>
                 <li><a href="/page/turtles-all-the-way-down">Turtles All the Way Down</a></li>
                 <li><a href="/page/everything-i-need-to-know-in-life-i-learned-from-reading-william-gibson-novels">Everything I Need to Know In Life, I Learned from Reading William Gibson Novels</a></li>
@@ -199,8 +191,17 @@
                 </center>
                 <!-- End of Search -->
 
-                <br /><hr>
+                <br />
+                <hr>
 
+                <!-- RSS and ATOM feeds -->
+                <ul>
+                <li><a href="{{ FEED_DOMAIN }}/{% if FEED_ALL_RSS_URL %}{{ FEED_ALL_RSS_URL }}{% else %}{{ FEED_ALL_RSS }}{% endif %}" type="application/rss+xml" rel="alternate" title="RSS feed" />RSS feed</a></li>
+                <li><a href="{{ FEED_DOMAIN }}/{% if FEED_ALL_ATOM_URL %}{{ FEED_ALL_ATOM_URL }}{% else %}{{ FEED_ALL_ATOM }}{% endif %}" type="application/atom+xml" rel="alternate" title="Atom feed" />ATOM feed</a></li>
+                </ul>
+                <!-- End of RSS and ATOM feeds -->
+
+                <hr>
             </nav>
         </header>
     </div>

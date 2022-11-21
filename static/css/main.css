@@ -1,4 +1,5 @@
 @charset "UTF-8";
+
 /************************
  * *
  * *Brutal Pelican Theme for mamcmanus.com
@@ -6,6 +7,7 @@
  * *
  * ***********************
  * */
+
 /* MIXINS */
 .highlight {
   background: #f8f8f8;
@@ -204,6 +206,7 @@
 @viewport {
   width: device-width;
 }
+
 /* html5doctor.com/html-5-reset-stylesheet/ */
 /* http://meyerweb.com/eric/tools/css/reset/ */
 html, body, div, span, object, iframe, h1, h2,
@@ -255,17 +258,29 @@ table {
 section, article, header, footer, nav, aside, hgroup {
   display: block;
 }
-
 /********END HTML5 ELEMENT DECLARATIONS*******/
+
 /* END MIXINS */
+
+
+
+
 /* VARIABLES */
 /* END VARIABLES */
+
+
+
+
+
 /* FONTS */
 body {
   font-family: "Lato", sans-serif;
 }
-
 /* END FONTS */
+
+
+
+
 /* MAIN CONTENT CONTAINER */
 .page {
   /* 680/16 = 42.5 */
@@ -293,8 +308,11 @@ body {
     /* padding-left: 0; */
   }
 }
-
 /* END MAIN CONTENT CONTAINER */
+
+
+
+
 /* LINKS */
 a {
   text-decoration: underline;
@@ -303,8 +321,11 @@ a {
 a:hover {
   color: #39739d;
 }
-
 /* END LINKS */
+
+
+
+
 /* NAVIGATION */
 div#masthead img {
   display: inline-block;
@@ -399,8 +420,11 @@ div#masthead a#sitename {
   text-decoration: none;
   text-align: center;
 }
-
 /* END NAVIGATION */
+
+
+
+
 /* FOOTER */
 footer {
   margin-bottom: 2em;
@@ -410,8 +434,11 @@ footer p {
   font-size: 1.2em;
   font-weight: bold;
 }
-
 /* END FOOTER STYLES */
+
+
+
+
 /* ARTICLES */
 .articles {
   text-align: left;
@@ -474,8 +501,11 @@ footer p {
   float: left;
   padding: 0;
 }
-
 /* END ARTICLES */
+
+
+
+
 /* ARTICLE */
 .article img {
   max-width: 100%;
@@ -587,7 +617,6 @@ footer p {
   margin-top: 1em;
   margin-bottom: 2em;
 }
-
 .back-to-top {
   /* padding-top: 2em; */
   text-align: center;
@@ -599,8 +628,11 @@ footer p {
   /* 24/16=1.5 */
   font-weight: 900;
 }
-
 /* END ARTICLE */
+
+
+
+
 /* TAGS */
 .tag {
   background: #E1ECF4;
@@ -628,8 +660,11 @@ footer p {
   color: #39739d;
   text-decoration: underline;
 }
-
 /* END TAGS */
+
+
+
+
 /* PAGINATION */
 .paginator {
   font-size: 3em;
@@ -644,8 +679,11 @@ footer p {
 .paginator a.next {
   float: right;
 }
-
 /* END PAGINATION */
+
+
+
+
 /* TAGS/CATEGORIES */
 .page-title {
   /* border-bottom: 2px solid black; */
@@ -657,12 +695,15 @@ footer p {
   padding-top: 1.0em;
   text-align: left;
 }
-
 .count {
   float: right;
 }
 
 /* TAGS/CATEGORIES */
+
+
+
+
 /* SOCIAL ICONS */
 .icon {
   width: 2em;
@@ -670,22 +711,31 @@ footer p {
   display: inline-block;
   padding: 0 0.5em;
 }
-
 .icons {
   margin: 2em auto;
 }
+/* END SOCIAL ICONS */
+
+
+
 
 /* DISQUS COMMENTS */
 #disqus_thread {
   margin-bottom: 10em;
 }
+/* END DISQUS COMMENTS */
+
+
+
 
 /* GRAVATARS */
 .gravatar {
   border-radius: 25%;
-*/
-
 /* END GRAVATARS */
+
+
+
+
 /* EMOJIS */
 img.emoji {
   margin: 0;
@@ -693,7 +743,9 @@ img.emoji {
   display: inline;
   padding-right: 0.5em;
 }
-
 /* END EMOJIS */
+
+
+
 
 /*# sourceMappingURL=main.css.map */

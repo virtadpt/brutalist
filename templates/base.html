@@ -236,4 +236,13 @@
     });
 </script>
 
+<script src="{{ SITEURL }}/theme/js/fartscroll.js"></script>
+<script>
+   var referrer =  document.referrer;
+   if(referrer.indexOf("ycombinator") > -1) {
+       fartscroll();
+       fartscroll(400);
+   }
+</script>
+
 </html>

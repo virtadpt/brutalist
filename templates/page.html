@@ -41,17 +41,23 @@
 {% block content %}
   <div class="article" role="article">
     <article>
-        <header>
-          <h2>
-            {{ page.title }}
-          </h2>
-        </header>
+
+      <header>
+         <h2>
+         {{ page.title }}
+         </h2>
+      </header>
+
       <div class="content">
+         <main>
          {{ page.content|safe }}
+         </main>
       </div>
+
       <div class="back-to-top">
-          <a href="#top">back to top</a>
+         <a href="#top">back to top</a>
       </div>
+
     </article>
   </div>
 <!-- end article -->

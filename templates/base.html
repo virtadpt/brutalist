@@ -65,7 +65,7 @@
         <meta name="msapplication-TileImage"
             content="/favicons/ms-icon-144x144.png">
 
-        <!-- css -->
+        <!-- CSS -->
         <link rel="stylesheet" type="text/css"
             href="{{ SITEURL }}/theme/css/main.css" />
 
@@ -145,7 +145,7 @@
                 <hr>
 
                 <ul>
-                <li><a href="">Necrology</a></li>
+                <li><a href="">The Fallen</a></li>
                 <li><a href="/page/edward-c-grejda-rip">Edward C. Grejda</a></li>
                 <li><a href="/page/helen-wendel-rip">Helen Wendel</a></li>
                 <li><a href="http://crusher.parad.net/">Crusher [412/724]</a></li>
@@ -190,7 +190,7 @@
                 <hr>
 
                 <!-- Search -->
-                <center>
+                <!-- <center>
                 <section class="box search">
                 <form method="get" accept-charset="UTF-8" target="_blank"
                     action="https://heterochromia.virtadpt.net/yacysearch.html">
@@ -212,6 +212,11 @@
                 </div>
                 </form>
                 </section>
+                </center> -->
+
+                <center>
+                Search: <input data-stork="sitesearch" />
+                <div data-stork="sitesearch-output"></div>
                 </center>
                 <!-- End of Search -->
 
@@ -267,6 +272,16 @@
        fartscroll();
        fartscroll(400);
    }
+</script>
+
+<!-- Pull in the guts of the Stork search functionality. -->
+<link rel="stylesheet" type="text/css"
+    href="{{ SITEURL }}/theme/css/stork.css" />
+<script src="{{ SITEURL }}/theme/js/stork.js"></script>
+<script type="text/javascript">
+    stork.initialize("{{ SITEURL }}/{{ THEME_STATIC_DIR }}/js/stork.wasm")
+    stork.downloadIndex("sitesearch", "{{ SITEURL }}/search-index.st")
+    stork.attach("sitesearch")
 </script>
 
 </html>

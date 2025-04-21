@@ -201,32 +201,48 @@
                 <!-- Search -->
                 <center>
                 <section class="box search">
+
+                <!-- The form opens searches in a new tab -->
                 <form method="get" accept-charset="UTF-8" target="_blank"
-                    action="https://heterochromia.virtadpt.net/yacysearch.html">
+                    action="https://duckduckgo.com/">
+
+                <!-- Tweak the positioning a bit -->
                 <div style="padding: 0.0em; -webkit-border-radius: 0.2em;
                     -moz-border-radius: 0.2em; border-radius: 0.2em;
                     margin: 0;">
+
+                <!-- Label what the box is for -->
                 <label for="query" style="padding: 0.8em; font-size: 1.2em;
                     font-weight: 400; display: block;">Search my site?</label>
-                <input type="text" name="query" value="" maxlength="100"
-                    style="width:225px; border-radius: 0.2em;" />
-                <input type="hidden" name="verify" value="cacheonly" />
-                <input type="hidden" name="maximumRecords" value="20" />
-                <input type="hidden" name="meanCount" value="5" />
-                <input type="hidden" name="resource" value="local" />
-                <input type="hidden" name="urlmaskfilter" value=".*" />
-                <input type="hidden" name="prefermaskfilter" value="" />
-                <input type="hidden" name="display" value="2" />
-                <input type="hidden" name="nav" value="all" />
+
+                <!-- Set the query parameter -->
+                <input name="q" id="search" style="width: 225px;
+                    border-radius: 0.2em;" />
+
+                <!-- Pass my site name along as the site: parameter -->
+                <input type="hidden" name="sites" value="drwho.virtadpt.net" />
+
+                <!-- Remove DDG branded header -->
+                <input type="hidden" name="ko" value="-2" />
+
+                <!-- Remove DDG ads -->
+                <input type="hidden" name="k1" value="-1" />
+
+                <!-- Remove related searches -->
+                <input type="hidden" name="kz" value="-1" />
+
+                <!-- Turn Safe Search off -->
+                <input type="hidden" name="kp" value="-2" />
+
+                <!-- Search result width -->
+                <input type="hidden" name="kw" value="s" />
+
+                <!-- Close them there tags -->
                 </div>
                 </form>
                 </section>
                 </center>
 
-                <!-- <center>
-                Search: <input data-stork="sitesearch" />
-                <div data-stork="sitesearch-output"></div>
-                </center> -->
                 <!-- End of Search -->
 
                 <br />
